@@ -1,0 +1,316 @@
+/* Общие стили */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Шапка */
+header {
+	background-color: #f1f1f1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #00bfff;
+}
+
+.header-content {
+	margin-top: 40px;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.button {
+	display: inline-block;
+	background-color: #00bfff;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #00bfff;
+	border: 2px solid #00bfff;
+}
+
+/* Секция Services */
+.services {
+	padding: 60px 0;
+	text-align: center;
+	background-color: #fff;
+}
+
+.services h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.services ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.services li {
+	width: 30%;
+	margin: 0 5px;
+	padding: 30px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+.services li:hover {
+	background-color: #00bfff;
+	color: #fff;
+}
+
+.services img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.services h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.services p {
+	font-size: 16px;
+	color: #333;
+}
+
+/* Стили для секции Gallery */
+.gallery {
+	margin: 50px 0;
+}
+
+.gallery h2 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.gallery ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.gallery li {
+	flex-basis: calc(33.33% - 20px);
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Стили для секции Contact */
+.contact {
+	margin: 50px 0;
+}
+
+.contact h2 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.contact form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.contact label {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact textarea {
+	height: 150px;
+}
+
+.contact button[type="submit"] {
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+	background-color: #0069d9;
+}
+footer {
+	text-align: center;
+}
+/* Стили для формы */
+.calculator h2{
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 30px;
+	color: #333;
+}
+.calculator-form {
+	display: flex;
+	/* Включаем flexbox для выравнивания элементов */
+	flex-direction: column;
+	/* Вертикальное расположение элементов */
+	max-width: 600px;
+	/* Максимальная ширина формы */
+	margin: 0 auto;
+	/* Центрируем форму */
+}
+
+/* Стили для каждого элемента формы */
+.calculator-form div {
+	display: flex;
+	/* Включаем flexbox для выравнивания элементов */
+	align-items: center;
+	/* Выравнивание элементов по вертикали */
+	margin-bottom: 1rem;
+	/* Расстояние между элементами */
+}
+
+/* Стили для заголовков полей */
+.calculator-form label {
+	margin-right: 1rem;
+	/* Расстояние между заголовком и полем */
+	min-width: 150px;
+	/* Минимальная ширина заголовка */
+	font-weight: bold;
+	/* Жирный шрифт */
+}
+
+/* Стили для полей */
+.calculator-form input,
+.calculator-form select {
+	flex: 1;
+	/* Оставляем всё свободное пространство для поля */
+	padding: 0.5rem;
+	/* Отступы вокруг поля */
+	border: 1px solid #ccc;
+	/* Рамка вокруг поля */
+	border-radius: 5px;
+	/* Закругляем углы рамки */
+	font-size: 1rem;
+	/* Размер шрифта */
+	background-color: #fff;
+	/* Цвет фона поля */
+}
+
+/* Стили для кнопки */
+.calculator-form .calculate-button {
+	margin-top: 1rem;
+	/* Расстояние от последнего поля до кнопки */
+	padding: 0.5rem 1rem;
+	/* Отступы вокруг текста кнопки */
+	border: none;
+	/* Убираем рамку у кнопки */
+	border-radius: 5px;
+	/* Закругляем углы кнопки */
+	background-color: #008CBA;
+	/* Цвет фона кнопки */
+	color: #fff;
+	/* Цвет текста кнопки */
+	font-size: 1rem;
+	/* Размер шрифта */
+	cursor: pointer;
+	/* Курсор при наведении на кнопку */
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 767px) {
+	.calculator-form label {
+		min-width: auto;
+		/* Отключаем минимальную ширину заголовка */
+	}
+
+	.calculator-form input,
+	.calculator-form select {
+		font-size: 0.9rem;
+		/* Уменьшаем размер шрифта */
+	}
+}

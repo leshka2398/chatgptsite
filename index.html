@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karkas</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-content">
+			<h1>Produce Durable Steel Frame Buildings</h1>
+			<p>Custom designs, high-quality materials, and exceptional service.</p>
+			<a href="#" class="button">Get a Quote</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="services">
+				<h2>Our Services</h2>
+				<ul>
+					<li>
+						<img src="./img/product1.png" alt="Design Icon">
+						<h3>Custom Designs</h3>
+						<p>We work with you to create a unique building design that meets your needs.</p>
+					</li>
+					<li>
+						<img src="./img/product1.png" alt="Quality Icon">
+						<h3>High-Quality Materials</h3>
+						<p>We use only the best materials to ensure your building lasts for years to come.</p>
+					</li>
+					<li>
+						<img src="./img/product1.png" alt="Support Icon">
+						<h3>Exceptional Service</h3>
+						<p>Our team is always available to answer your questions and provide support.</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="gallery">
+				<h2>Gallery</h2>
+				<ul>
+					<li><img src="./img/product1.png" alt="Building"></li>
+					<li><img src="./img/product1.png" alt="Building"></li>
+					<li><img src="./img/product1.png" alt="Building"></li>
+					<li><img src="./img/product1.png" alt="Building"></li>
+				</ul>
+			</section>
+
+			<section class="calculator">
+				<h2>Calculate</h2>
+				<form class="calculator-form">
+					<div>
+						<label for="building-type">Тип здания:</label>
+						<select id="building-type">
+							<option value="1">Производственное</option>
+							<option value="2">Складское</option>
+							<option value="3">Офисное</option>
+						</select>
+					</div>
+					<div>
+						<label for="building-size">Площадь здания (кв. м):</label>
+						<input type="number" id="building-size" min="1" max="10000" step="1">
+					</div>
+					<div>
+						<label for="roof-type">Тип крыши:</label>
+						<select id="roof-type">
+							<option value="1">Профнастил</option>
+							<option value="2">Металлочерепица</option>
+							<option value="3">Шифер</option>
+						</select>
+					</div>
+					<div>
+						<label for="wall-type">Тип стен:</label>
+						<select id="wall-type">
+							<option value="1">Сэндвич-панели</option>
+							<option value="2">Профнастил</option>
+							<option value="3">Кирпич</option>
+						</select>
+					</div>
+					<div>
+						<label for="insulation">Утепление стен и крыши:</label>
+						<select id="insulation">
+							<option value="1">50 мм</option>
+							<option value="2">100 мм</option>
+							<option value="3">150 мм</option>
+						</select>
+					</div>
+					<button type="submit" class="calculate-button">Рассчитать</button>
+				</form>
+			</section>
+
+			<section class="contact">
+				<h2>Contact Us</h2>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name">
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email">
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone">
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message"></textarea>
+
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Karkas. All rights reserved.</p>
+	</footer>
